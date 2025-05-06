@@ -59,3 +59,9 @@ daftar_buku = ['Harry Potter', 'Lima Sekawan', 'Narnia','4WD']
 daftar_buku.pop(-2)   #pop() di ambil dari paling ujung terakhir hitung ke kiri
 for i in range(0, len(daftar_buku)):
     print(daftar_buku[i])
+
+print('\nPerintah del')
+daftar_buku = ['Harry Potter', 'Lima Sekawan', 'Narnia','4WD']
+del daftar_buku[2]  #menghapus index ke 2
+for i in range(0, len(daftar_buku)):
+    print(daftar_buku[i])
