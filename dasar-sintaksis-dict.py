@@ -24,4 +24,13 @@ print(users["address"]["street"])
 print(users["address"]["geo"])
 print(users["address"]["geo"]["lat"])
 
+print(users)
+print(type(users))
+print(f"\nubah dict ke json")
+import json
+result = json.dumps(users)  # dumps: mengubah ke json (string)
+print(type(result))
+print(result)
 
+with open('result.json', 'w') as file:  # membuat/menulis file result.json
+    json.dump(users, file)
